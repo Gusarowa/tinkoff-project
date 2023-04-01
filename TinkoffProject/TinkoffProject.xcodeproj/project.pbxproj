@@ -7,23 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F74252CF29C3A2700003E7A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74252CE29C3A2700003E7A4 /* AppDelegate.swift */; };
 		F74252D129C3A2700003E7A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74252D029C3A2700003E7A4 /* SceneDelegate.swift */; };
 		F74252D329C3A2700003E7A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74252D229C3A2700003E7A4 /* ViewController.swift */; };
-		F74252D629C3A2700003E7A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74252D429C3A2700003E7A4 /* Main.storyboard */; };
 		F74252D829C3A2710003E7A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F74252D729C3A2710003E7A4 /* Assets.xcassets */; };
 		F74252DB29C3A2710003E7A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74252D929C3A2710003E7A4 /* LaunchScreen.storyboard */; };
+		F7884B2629D815E200FA13D4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7884B2529D815E200FA13D4 /* AppCoordinator.swift */; };
+		F7884B2929D8167600FA13D4 /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7884B2829D8167600FA13D4 /* AuthorizationService.swift */; };
+		F7884B2B29D8169200FA13D4 /* MockAuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7884B2A29D8169200FA13D4 /* MockAuthorizationService.swift */; };
+		F7884B2E29D81BC000FA13D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7884B2D29D81BC000FA13D4 /* LoginViewController.swift */; };
+		F7884B3029D81BE700FA13D4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7884B2F29D81BE700FA13D4 /* LoginPresenter.swift */; };
+		F7884B3229D81C3500FA13D4 /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7884B3129D81C3500FA13D4 /* MainTabBarCoordinator.swift */; };
+		F7884B3429D81C8E00FA13D4 /* PlantCareFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7884B3329D81C8E00FA13D4 /* PlantCareFlowCoordinator.swift */; };
+		F7884B3629D81DC200FA13D4 /* TextFieldExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7884B3529D81DC200FA13D4 /* TextFieldExtention.swift */; };
+		F7884B3929D81E3200FA13D4 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7884B3829D81E3200FA13D4 /* Plant.swift */; };
+		F7884B3C29D820EE00FA13D4 /* MyPlantsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7884B3B29D820EE00FA13D4 /* MyPlantsService.swift */; };
+		F7884B3E29D8211C00FA13D4 /* MockMyPlantsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7884B3D29D8211C00FA13D4 /* MockMyPlantsService.swift */; };
+		F7884B4129D823D900FA13D4 /* PlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7884B4029D823D900FA13D4 /* PlantsViewController.swift */; };
+		F7884B4329D8241F00FA13D4 /* PlantsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7884B4229D8241F00FA13D4 /* PlantsPresenter.swift */; };
+		F7884B4629D825D500FA13D4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7884B4529D825D500FA13D4 /* DetailViewController.swift */; };
+		F7884B4829D825F500FA13D4 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7884B4729D825F500FA13D4 /* DetailPresenter.swift */; };
+		F7884B4A29D82A7800FA13D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7884B4929D82A7800FA13D4 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F74252CB29C3A2700003E7A4 /* TinkoffProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkoffProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F74252CE29C3A2700003E7A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F74252D029C3A2700003E7A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F74252D229C3A2700003E7A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F74252D529C3A2700003E7A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F74252D729C3A2710003E7A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F74252DA29C3A2710003E7A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F74252DC29C3A2710003E7A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7884B2529D815E200FA13D4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F7884B2829D8167600FA13D4 /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
+		F7884B2A29D8169200FA13D4 /* MockAuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthorizationService.swift; sourceTree = "<group>"; };
+		F7884B2D29D81BC000FA13D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F7884B2F29D81BE700FA13D4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		F7884B3129D81C3500FA13D4 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
+		F7884B3329D81C8E00FA13D4 /* PlantCareFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCareFlowCoordinator.swift; sourceTree = "<group>"; };
+		F7884B3529D81DC200FA13D4 /* TextFieldExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtention.swift; sourceTree = "<group>"; };
+		F7884B3829D81E3200FA13D4 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		F7884B3B29D820EE00FA13D4 /* MyPlantsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsService.swift; sourceTree = "<group>"; };
+		F7884B3D29D8211C00FA13D4 /* MockMyPlantsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMyPlantsService.swift; sourceTree = "<group>"; };
+		F7884B4029D823D900FA13D4 /* PlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewController.swift; sourceTree = "<group>"; };
+		F7884B4229D8241F00FA13D4 /* PlantsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsPresenter.swift; sourceTree = "<group>"; };
+		F7884B4529D825D500FA13D4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F7884B4729D825F500FA13D4 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		F7884B4929D82A7800FA13D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +84,85 @@
 		F74252CD29C3A2700003E7A4 /* TinkoffProject */ = {
 			isa = PBXGroup;
 			children = (
-				F74252CE29C3A2700003E7A4 /* AppDelegate.swift */,
+				F7884B4C29D8302000FA13D4 /* Services */,
+				F7884B4B29D82FAF00FA13D4 /* Presentation */,
+				F7884B3729D81E0A00FA13D4 /* Model */,
 				F74252D029C3A2700003E7A4 /* SceneDelegate.swift */,
-				F74252D229C3A2700003E7A4 /* ViewController.swift */,
-				F74252D429C3A2700003E7A4 /* Main.storyboard */,
+				F7884B4929D82A7800FA13D4 /* AppDelegate.swift */,
+				F7884B3529D81DC200FA13D4 /* TextFieldExtention.swift */,
 				F74252D729C3A2710003E7A4 /* Assets.xcassets */,
-				F74252D929C3A2710003E7A4 /* LaunchScreen.storyboard */,
 				F74252DC29C3A2710003E7A4 /* Info.plist */,
+				F74252D929C3A2710003E7A4 /* LaunchScreen.storyboard */,
+				F74252D229C3A2700003E7A4 /* ViewController.swift */,
 			);
 			path = TinkoffProject;
+			sourceTree = "<group>";
+		};
+		F7884B2729D8165D00FA13D4 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				F7884B2829D8167600FA13D4 /* AuthorizationService.swift */,
+				F7884B2A29D8169200FA13D4 /* MockAuthorizationService.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		F7884B2C29D81B8900FA13D4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F7884B2D29D81BC000FA13D4 /* LoginViewController.swift */,
+				F7884B2F29D81BE700FA13D4 /* LoginPresenter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F7884B3729D81E0A00FA13D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7884B3829D81E3200FA13D4 /* Plant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7884B3A29D8208700FA13D4 /* MyPlants */ = {
+			isa = PBXGroup;
+			children = (
+				F7884B3B29D820EE00FA13D4 /* MyPlantsService.swift */,
+				F7884B3D29D8211C00FA13D4 /* MockMyPlantsService.swift */,
+			);
+			path = MyPlants;
+			sourceTree = "<group>";
+		};
+		F7884B3F29D8239D00FA13D4 /* Plants */ = {
+			isa = PBXGroup;
+			children = (
+				F7884B4029D823D900FA13D4 /* PlantsViewController.swift */,
+				F7884B4229D8241F00FA13D4 /* PlantsPresenter.swift */,
+				F7884B4529D825D500FA13D4 /* DetailViewController.swift */,
+				F7884B4729D825F500FA13D4 /* DetailPresenter.swift */,
+			);
+			path = Plants;
+			sourceTree = "<group>";
+		};
+		F7884B4B29D82FAF00FA13D4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F7884B3F29D8239D00FA13D4 /* Plants */,
+				F7884B2C29D81B8900FA13D4 /* Login */,
+				F7884B3329D81C8E00FA13D4 /* PlantCareFlowCoordinator.swift */,
+				F7884B3129D81C3500FA13D4 /* MainTabBarCoordinator.swift */,
+				F7884B2529D815E200FA13D4 /* AppCoordinator.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F7884B4C29D8302000FA13D4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F7884B3A29D8208700FA13D4 /* MyPlants */,
+				F7884B2729D8165D00FA13D4 /* Authorization */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +225,6 @@
 			files = (
 				F74252DB29C3A2710003E7A4 /* LaunchScreen.storyboard in Resources */,
 				F74252D829C3A2710003E7A4 /* Assets.xcassets in Resources */,
-				F74252D629C3A2700003E7A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +235,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7884B3029D81BE700FA13D4 /* LoginPresenter.swift in Sources */,
+				F7884B4629D825D500FA13D4 /* DetailViewController.swift in Sources */,
+				F7884B4829D825F500FA13D4 /* DetailPresenter.swift in Sources */,
+				F7884B4129D823D900FA13D4 /* PlantsViewController.swift in Sources */,
+				F7884B3929D81E3200FA13D4 /* Plant.swift in Sources */,
+				F7884B2E29D81BC000FA13D4 /* LoginViewController.swift in Sources */,
+				F7884B2629D815E200FA13D4 /* AppCoordinator.swift in Sources */,
+				F7884B3629D81DC200FA13D4 /* TextFieldExtention.swift in Sources */,
+				F7884B3229D81C3500FA13D4 /* MainTabBarCoordinator.swift in Sources */,
+				F7884B2B29D8169200FA13D4 /* MockAuthorizationService.swift in Sources */,
+				F7884B2929D8167600FA13D4 /* AuthorizationService.swift in Sources */,
 				F74252D329C3A2700003E7A4 /* ViewController.swift in Sources */,
-				F74252CF29C3A2700003E7A4 /* AppDelegate.swift in Sources */,
+				F7884B4A29D82A7800FA13D4 /* AppDelegate.swift in Sources */,
+				F7884B4329D8241F00FA13D4 /* PlantsPresenter.swift in Sources */,
+				F7884B3429D81C8E00FA13D4 /* PlantCareFlowCoordinator.swift in Sources */,
 				F74252D129C3A2700003E7A4 /* SceneDelegate.swift in Sources */,
+				F7884B3C29D820EE00FA13D4 /* MyPlantsService.swift in Sources */,
+				F7884B3E29D8211C00FA13D4 /* MockMyPlantsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F74252D429C3A2700003E7A4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F74252D529C3A2700003E7A4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F74252D929C3A2710003E7A4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,9 +395,9 @@
 				INFOPLIST_FILE = TinkoffProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,9 +405,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.itis.TinkoffProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,9 +425,9 @@
 				INFOPLIST_FILE = TinkoffProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +435,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.itis.TinkoffProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

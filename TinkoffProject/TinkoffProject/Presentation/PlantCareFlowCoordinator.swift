@@ -15,7 +15,7 @@ class PlantCareFlowCoordinator {
     func start() -> UIViewController {
         let plantsViewController = PlantsViewController()
         let presenter = PlantsPresenter()
-        presenter.showDetails = showDetail
+        presenter.moduleOutput = self
         plantsViewController.presenter = presenter
         presenter.view = plantsViewController
         
@@ -23,8 +23,10 @@ class PlantCareFlowCoordinator {
         self.navController = navController
         return navController
     }
-    
-    func showDetail(for plant: Plant) {
+}
+
+extension PlantCareFlowCoordinator: PlantsModuleOutput {
+    func showDetails(plant: Plant) {
         let detailViewConroller = DetailViewController()
         let detailPresenter = DetailPresenter()
         detailPresenter.view = detailViewConroller
@@ -32,6 +34,5 @@ class PlantCareFlowCoordinator {
         navController?.show(detailViewConroller, sender: .none)
     }
 }
-
 
 

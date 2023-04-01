@@ -16,20 +16,17 @@ class PlantsViewController: UIViewController {
         return layout
     }()
     
-    var presenter: PlantsPresenter?
-    var list: [Plant] = []
+    var presenter: PlantsViewControllerOutput?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .white
         setup()
+        presenter?.viewDidLoad()
     }
     
     private func setup() {
-        guard let presenter else { return }
-        presenter.showPlants()
-        
         let collectionView: UICollectionView = .init(
             frame: .zero,
             collectionViewLayout: flowLayout
@@ -51,14 +48,17 @@ class PlantsViewController: UIViewController {
 
 extension PlantsViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        list.count
+        guard let presenter else { return 0 }
+        return presenter.itemCount
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let presenter else { return UICollectionViewCell() }
+
         let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: "cell",
             for: indexPath)
-        let plant = list[indexPath.item]
+        let plant = presenter.getItem(for: indexPath.item)
         var config = UIListContentConfiguration.cell()
         config.text = plant.name
         config.image = UIImage(named: "plant")
@@ -80,7 +80,12 @@ extension PlantsViewController: UICollectionViewDataSource, UICollectionViewDele
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presenter?.showDetails(for: list[indexPath.item])
+        presenter?.viewDidSelectRow(index: indexPath.item)
     }
 }
 
+extension PlantsViewController: PlantsViewControllerInput {
+    func reloadData() {
+        flowLayout.collectionView?.reloadData()
+    }
+}

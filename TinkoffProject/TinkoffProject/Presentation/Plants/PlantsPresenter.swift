@@ -9,15 +9,29 @@ import UIKit
 
 class PlantsPresenter {
     var myPlantsService: MyPlantsService = MockMyPlantsService.shared
-    var showDetails: (Plant) -> Void = { _ in }
+    weak var moduleOutput: PlantsModuleOutput?
+
+    private var list: [Plant] = []
     
-    weak var view: PlantsViewController?
-    
-    func showPlants() {
-        view?.list = myPlantsService.getAll()
+    weak var view: PlantsViewControllerInput?
+}
+
+extension PlantsPresenter: PlantsViewControllerOutput {
+    var itemCount: Int {
+        list.count
     }
-    
-    func showDetails(for plant: Plant) {
-        showDetails(plant)
+
+    func getItem(for index: Int) -> Plant {
+        list[index]
+    }
+
+    func viewDidLoad() {
+        list = myPlantsService.getAll()
+        view?.reloadData()
+    }
+
+    func viewDidSelectRow(index: Int) {
+        let plant = list[index]
+        moduleOutput?.showDetails(plant: plant)
     }
 }

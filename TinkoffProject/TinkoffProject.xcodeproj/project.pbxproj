@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AEB88B729D861670087BA49 /* PlantsModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB88B629D861660087BA49 /* PlantsModuleIO.swift */; };
+		4AEB88BA29D862840087BA49 /* PlantsViewControllerIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB88B929D862840087BA49 /* PlantsViewControllerIO.swift */; };
+		4AEB88BD29D867030087BA49 /* PlantsCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB88BB29D867030087BA49 /* PlantsCoreDataModel.xcdatamodeld */; };
+		4AEB88CB29D868110087BA49 /* UserMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB88C729D868110087BA49 /* UserMO+CoreDataProperties.swift */; };
+		4AEB88CC29D868110087BA49 /* UserMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB88C829D868110087BA49 /* UserMO+CoreDataClass.swift */; };
+		4AEB88CD29D868110087BA49 /* PlantMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB88C929D868110087BA49 /* PlantMO+CoreDataProperties.swift */; };
+		4AEB88CE29D868110087BA49 /* PlantMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB88CA29D868110087BA49 /* PlantMO+CoreDataClass.swift */; };
+		4AEB88D129D868580087BA49 /* StorageServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB88D029D868580087BA49 /* StorageServiceProtocol.swift */; };
+		4AEB88D329D8687B0087BA49 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB88D229D8687B0087BA49 /* StorageService.swift */; };
 		F74252D129C3A2700003E7A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74252D029C3A2700003E7A4 /* SceneDelegate.swift */; };
 		F74252D329C3A2700003E7A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74252D229C3A2700003E7A4 /* ViewController.swift */; };
 		F74252D829C3A2710003E7A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F74252D729C3A2710003E7A4 /* Assets.xcassets */; };
@@ -30,6 +39,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4AEB88B629D861660087BA49 /* PlantsModuleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsModuleIO.swift; sourceTree = "<group>"; };
+		4AEB88B929D862840087BA49 /* PlantsViewControllerIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewControllerIO.swift; sourceTree = "<group>"; };
+		4AEB88BC29D867030087BA49 /* PlantsCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlantsCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		4AEB88C729D868110087BA49 /* UserMO+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4AEB88C829D868110087BA49 /* UserMO+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4AEB88C929D868110087BA49 /* PlantMO+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlantMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4AEB88CA29D868110087BA49 /* PlantMO+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlantMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4AEB88D029D868580087BA49 /* StorageServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageServiceProtocol.swift; sourceTree = "<group>"; };
+		4AEB88D229D8687B0087BA49 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		F74252CB29C3A2700003E7A4 /* TinkoffProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkoffProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F74252D029C3A2700003E7A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F74252D229C3A2700003E7A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +83,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AEB88B529D860C20087BA49 /* DetailPlant */ = {
+			isa = PBXGroup;
+			children = (
+				F7884B4529D825D500FA13D4 /* DetailViewController.swift */,
+				F7884B4729D825F500FA13D4 /* DetailPresenter.swift */,
+			);
+			path = DetailPlant;
+			sourceTree = "<group>";
+		};
+		4AEB88B829D862540087BA49 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7884B4029D823D900FA13D4 /* PlantsViewController.swift */,
+				4AEB88B929D862840087BA49 /* PlantsViewControllerIO.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4AEB88C629D868110087BA49 /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				4AEB88C729D868110087BA49 /* UserMO+CoreDataProperties.swift */,
+				4AEB88C829D868110087BA49 /* UserMO+CoreDataClass.swift */,
+				4AEB88C929D868110087BA49 /* PlantMO+CoreDataProperties.swift */,
+				4AEB88CA29D868110087BA49 /* PlantMO+CoreDataClass.swift */,
+			);
+			path = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		4AEB88CF29D8684B0087BA49 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				4AEB88D029D868580087BA49 /* StorageServiceProtocol.swift */,
+				4AEB88D229D8687B0087BA49 /* StorageService.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		F74252C229C3A2700003E7A4 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +150,7 @@
 				F74252DC29C3A2710003E7A4 /* Info.plist */,
 				F74252D929C3A2710003E7A4 /* LaunchScreen.storyboard */,
 				F74252D229C3A2700003E7A4 /* ViewController.swift */,
+				4AEB88BB29D867030087BA49 /* PlantsCoreDataModel.xcdatamodeld */,
 			);
 			path = TinkoffProject;
 			sourceTree = "<group>";
@@ -119,6 +176,7 @@
 		F7884B3729D81E0A00FA13D4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4AEB88C629D868110087BA49 /* ManagedObjects */,
 				F7884B3829D81E3200FA13D4 /* Plant.swift */,
 			);
 			path = Model;
@@ -136,10 +194,9 @@
 		F7884B3F29D8239D00FA13D4 /* Plants */ = {
 			isa = PBXGroup;
 			children = (
-				F7884B4029D823D900FA13D4 /* PlantsViewController.swift */,
+				4AEB88B829D862540087BA49 /* View */,
 				F7884B4229D8241F00FA13D4 /* PlantsPresenter.swift */,
-				F7884B4529D825D500FA13D4 /* DetailViewController.swift */,
-				F7884B4729D825F500FA13D4 /* DetailPresenter.swift */,
+				4AEB88B629D861660087BA49 /* PlantsModuleIO.swift */,
 			);
 			path = Plants;
 			sourceTree = "<group>";
@@ -147,6 +204,7 @@
 		F7884B4B29D82FAF00FA13D4 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4AEB88B529D860C20087BA49 /* DetailPlant */,
 				F7884B3F29D8239D00FA13D4 /* Plants */,
 				F7884B2C29D81B8900FA13D4 /* Login */,
 				F7884B3329D81C8E00FA13D4 /* PlantCareFlowCoordinator.swift */,
@@ -159,6 +217,7 @@
 		F7884B4C29D8302000FA13D4 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				4AEB88CF29D8684B0087BA49 /* Storage */,
 				F7884B3A29D8208700FA13D4 /* MyPlants */,
 				F7884B2729D8165D00FA13D4 /* Authorization */,
 			);
@@ -239,17 +298,26 @@
 				F7884B4629D825D500FA13D4 /* DetailViewController.swift in Sources */,
 				F7884B4829D825F500FA13D4 /* DetailPresenter.swift in Sources */,
 				F7884B4129D823D900FA13D4 /* PlantsViewController.swift in Sources */,
+				4AEB88CB29D868110087BA49 /* UserMO+CoreDataProperties.swift in Sources */,
 				F7884B3929D81E3200FA13D4 /* Plant.swift in Sources */,
+				4AEB88B729D861670087BA49 /* PlantsModuleIO.swift in Sources */,
+				4AEB88D329D8687B0087BA49 /* StorageService.swift in Sources */,
+				4AEB88D129D868580087BA49 /* StorageServiceProtocol.swift in Sources */,
 				F7884B2E29D81BC000FA13D4 /* LoginViewController.swift in Sources */,
 				F7884B2629D815E200FA13D4 /* AppCoordinator.swift in Sources */,
 				F7884B3629D81DC200FA13D4 /* TextFieldExtention.swift in Sources */,
+				4AEB88CD29D868110087BA49 /* PlantMO+CoreDataProperties.swift in Sources */,
 				F7884B3229D81C3500FA13D4 /* MainTabBarCoordinator.swift in Sources */,
 				F7884B2B29D8169200FA13D4 /* MockAuthorizationService.swift in Sources */,
+				4AEB88BD29D867030087BA49 /* PlantsCoreDataModel.xcdatamodeld in Sources */,
 				F7884B2929D8167600FA13D4 /* AuthorizationService.swift in Sources */,
+				4AEB88BA29D862840087BA49 /* PlantsViewControllerIO.swift in Sources */,
+				4AEB88CC29D868110087BA49 /* UserMO+CoreDataClass.swift in Sources */,
 				F74252D329C3A2700003E7A4 /* ViewController.swift in Sources */,
 				F7884B4A29D82A7800FA13D4 /* AppDelegate.swift in Sources */,
 				F7884B4329D8241F00FA13D4 /* PlantsPresenter.swift in Sources */,
 				F7884B3429D81C8E00FA13D4 /* PlantCareFlowCoordinator.swift in Sources */,
+				4AEB88CE29D868110087BA49 /* PlantMO+CoreDataClass.swift in Sources */,
 				F74252D129C3A2700003E7A4 /* SceneDelegate.swift in Sources */,
 				F7884B3C29D820EE00FA13D4 /* MyPlantsService.swift in Sources */,
 				F7884B3E29D8211C00FA13D4 /* MockMyPlantsService.swift in Sources */,
@@ -466,6 +534,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4AEB88BB29D867030087BA49 /* PlantsCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4AEB88BC29D867030087BA49 /* PlantsCoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 4AEB88BC29D867030087BA49 /* PlantsCoreDataModel.xcdatamodel */;
+			path = PlantsCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F74252C329C3A2700003E7A4 /* Project object */;
 }
